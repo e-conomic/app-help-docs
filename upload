@@ -1,0 +1,3 @@
+#!/bin/sh
+
+/c/Python27/Scripts/s3cmd sync -P -c "/c$1/.s3cfg" en-gb s3://e-conomic-texts
