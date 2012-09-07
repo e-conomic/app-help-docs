@@ -1,3 +1,6 @@
 #!/bin/sh
 
-/c/Python27/Scripts/s3cmd sync -P -c "/c$1/.s3cfg" en-gb s3://e-conomic-texts
+for DIR in `/bin/find -maxdepth 1 -type d -regex "\./[^.].*"`
+do
+	/c/Python27/Scripts/s3cmd sync -P -c "/c$1/.s3cfg" $DIR s3://e-conomic-texts
+done
