@@ -3,12 +3,12 @@ body {
 }
 
 .icon-btn {
-	background: #ddd;
-	border-radius: 3px;
-	border: 1px solid #eee;
+	background: url(key.png);
 	display: inline-block;
-	width: 40px;
-	height: 30px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 43px;
+	height: 43px;
 	padding: 10px 0;
 	text-align: center;
 }
